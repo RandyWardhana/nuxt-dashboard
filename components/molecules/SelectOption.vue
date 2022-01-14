@@ -1,5 +1,5 @@
 <template>
-  <select v-model="value" :class="classname" :value="value" @onChange="onSelect($event)">
+  <select :class="classname" :value="value" @input="onSelect">
     <option class="hidden" value="" disabled selected>{{ placeholder }}</option>
     <option
       v-for="option in options"

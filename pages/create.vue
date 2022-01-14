@@ -380,8 +380,8 @@ export default {
           Number(this.dataState.item_list[key].price)
       }
     },
-    handleSelect(event) {
-      this.dataState.payment_terms = event.target.value
+    handleSelect($event) {
+      this.dataState.payment_terms = $event.target.value
     },
     goBack() {
       this.$router.back()
